@@ -1,0 +1,30 @@
+# Local Codex/CLI files
+codex.instructions
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# OS / misc
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+
+# Tools
+.tmp_tools/
+
+# Logs
+wget-log
