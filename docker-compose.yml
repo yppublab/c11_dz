@@ -339,7 +339,7 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.19.0.0/24
+        - subnet: 172.33.0.0/24
     driver_opts:
       com.docker.network.bridge.enable_icc: "true"
       com.docker.network.bridge.name: br-uplink

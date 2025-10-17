@@ -11,8 +11,8 @@ fi
 
 # Задаем дефолтный маршрут на Docker
 ip route del default
-ip route add default via 172.19.0.1 || true
-echo "Set default route via 172.19.0.1 / uplink"
+ip route add default via 172.33.0.1 || true
+echo "Set default route via 172.33.0.1 / uplink"
 
 # Keep container alive
 tail -f /dev/null
