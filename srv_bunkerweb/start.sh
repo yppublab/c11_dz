@@ -9,5 +9,6 @@ apk add shadow openssh sudo
 chmod +x /usr/local/bin/ansible_agent_deploy.sh
 /usr/local/bin/ansible_agent_deploy.sh
 /usr/sbin/sshd
-
-exec /usr/share/bunkerweb/entrypoint.sh "$@"
+chmod 666 /dev/stdout /dev/stderr
+chown -R nginx:nginx /data && chmod -R 700 /data
+exec su -s /bin/sh nginx -c "/usr/share/bunkerweb/all-in-one/entrypoint.sh \"$@\""
