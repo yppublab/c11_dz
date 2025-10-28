@@ -28,3 +28,7 @@ Thumbs.db
 
 # Logs
 wget-log
+
+#Bunkerweb cache
+srv_bunkerweb/data/cache/jinja_cache
+srv_bunkerweb/data/lib/ui_sessions_cache
