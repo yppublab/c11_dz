@@ -29,6 +29,12 @@ Thumbs.db
 # Logs
 wget-log
 
+# Target
+fw/nftables.target.conf
+
 #Bunkerweb cache
 srv_bunkerweb/data/cache/jinja_cache
 srv_bunkerweb/data/lib/ui_sessions_cache
+srv_bunkerweb/data/cache/blacklist
+srv_bunkerweb/data/lib/db.sqlite3-shm
+srv_bunkerweb/data/lib/db.sqlite3-wal

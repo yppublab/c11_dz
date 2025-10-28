@@ -12,6 +12,8 @@ ip route add default via "$GATEWAY_IP" || true
 # Packages
 apk add bash nginx openssh iproute2 sudo openssl shadow nano
 
+useradd -m -s /bin/bash -p "${PETROVICH_HASH}" petrovich || true
+
 # Minimal nginx site
 rm -f /etc/nginx/http.d/default.conf 2>/dev/null || true
 
