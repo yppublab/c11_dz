@@ -11,6 +11,6 @@ $TTL 300
 @         IN NS ns.darkstore.local.
 
 ; APEX and hosts
-@         IN A 192.168.103.10
+@         IN A 192.168.102.10
 ns        IN A 192.168.103.24
 mail      IN A 192.168.103.20
