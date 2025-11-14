@@ -14,6 +14,8 @@ set -euo pipefail
 # Ensure APT repositories use HTTPS (replace any http:// with https://)
 sudo sed -i 's|http://|https://|g' /etc/apt/sources.list
 
+sudo apt install netcat -y
+
 # Prepare XRDP session for b.anna
 mkdir -p /home/b.anna
 printf '%s\n%s\n' "setxkbmap -layout us,ru -option grp:alt_shift_toggle" "exec startplasma-x11" > /home/b.anna/.xsession

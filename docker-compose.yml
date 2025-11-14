@@ -1,4 +1,5 @@
-﻿services:
+﻿
+services:
   nat:
     hostname: nat
     build: ./nat
@@ -84,9 +85,7 @@
     user: root
     restart: always    
     environment:
-      - SERVICE_API="yes"
-      - API_WHITELIST_IPS="127.0.0.0/8 192.168.102.0/24"
-      - USE_REDIS="no"
+      - USE_REDIS=no
       - GATEWAY_IP=192.168.102.254
       - ANSIBLE_HASH=${ANSIBLE_HASH}      
       # Optionally set an admin override token
